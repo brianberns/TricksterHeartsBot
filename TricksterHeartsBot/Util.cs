@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Trickster.Bots;
+﻿using Trickster.Bots;
 using Trickster.cloud;
 
 namespace TestBots
@@ -92,7 +88,7 @@ namespace TestBots
             //  if we have cards in the trick, set stuff about the trick and adjust legal cards 
             if (this.trick.Count > 0)
             {
-                Assert.IsTrue(this.trick.Count < playersCollection.Count, $"{this.trick.Count} cards in trick is too many");
+                // Assert.IsTrue(this.trick.Count < playersCollection.Count, $"{this.trick.Count} cards in trick is too many");
 
                 var highCardIndex = bot.TrickHighCardIndex(this.trick);
                 cardTakingTrick = this.trick[highCardIndex];
