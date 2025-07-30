@@ -3,7 +3,7 @@ using Trickster.cloud;
 
 namespace TestBots
 {
-    internal static class Util
+    public static class Util
     {
         public static string PrettyCards(IEnumerable<Card> cards)
         {
