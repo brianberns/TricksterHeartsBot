@@ -493,7 +493,7 @@ namespace Trickster.Bots
             return -1;
         }
 
-        private double EstimatedPoints(Hand hand, Suit t)
+        public double EstimatedPoints(Hand hand, Suit t)
         {
             //  ensure all suits have at least some value so we never pick Suit.Unknown
             var estimatedPoints = 0.1;
